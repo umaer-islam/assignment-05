@@ -1,9 +1,15 @@
+import Navbar from "./components/Navbar";
+
 function App() {
   return (
-    <div>
-      <h1>App</h1>
-    </div>
-  )
+    <>
+      <Navbar />
+
+      <main>
+        <h1>Dev Stack</h1>
+      </main>
+    </>
+  );
 }
 
-export default App
+export default App;
