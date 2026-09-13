@@ -1,28 +1,23 @@
 import bannerStack from "../assets/banner-stack.png"
 
-function Hero(){
-  return(
+function Hero() {
+  return (
     <section className="hero">
 
       <div className="hero-content">
-        <p className="hero-label">BUILD YOUR TECH STACK</p>
-
         <h1>
-          Build Your Perfect
+          Build Your Ideal
           <span> Development Stack</span>
         </h1>
-
         <p className="hero-description">
-          Discover the right technologies, compare your options, and build a
-          powerful development stack for your next project.
-        </p>
-
+          Explore frontend, backend, database, and tooling options,<br />
+          compare them side by side, and put together the stack that fits your
+          next project. </p>
         <div className="hero-buttons">
-          <a href="#technologies" className="primary-button">
+          <a href="#" className="primary-button">
             Explore Technologies
           </a>
-
-          <a href="#about" className="secondary-button">
+          <a href="#" className="secondary-button">
             Learn More
           </a>
         </div>

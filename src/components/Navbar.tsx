@@ -5,7 +5,6 @@ function Navbar() {
     <nav className="navbar">
 
       <button className="menu-button">☰</button>
-
       <div className="navbar-logo">
         <img src={logo} alt="Dev Stack" />
       </div>
@@ -16,7 +15,6 @@ function Navbar() {
         <a href="#">About</a>
         <a href="#">Contact</a>
       </div>
-
       <div className="navbar-actions">
         <a href="#">Sign In</a>
         <a href="#" className="signup-button">Sign Up</a>
