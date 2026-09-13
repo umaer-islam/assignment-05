@@ -4,7 +4,7 @@
     "name": "React",
     "category": "Frontend",
     "description": "A declarative, component-based JavaScript library for building modern user interfaces.",
-    "icon": "/src/assets/icons/react.png",
+    "icon": "/icons/react.png",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
     "badge": "Popular"
@@ -14,7 +14,7 @@
     "name": "Vue.js",
     "category": "Frontend",
     "description": "An approachable, performant, and versatile framework for building web user interfaces.",
-    "icon": "/src/assets/icons/vue.jpg",
+    "icon": "/icons/vue.jpg",
     "rating": 4.8,
     "difficulty": "Beginner-Friendly",
     "badge": "Versatile"
@@ -24,7 +24,7 @@
     "name": "Svelte",
     "category": "Frontend",
     "description": "A cybernetically enhanced web app framework with compile-time reactivity and zero virtual DOM overhead.",
-    "icon": "/src/assets/icons/svelte.png",
+    "icon": "/icons/svelte.png",
     "rating": 4.8,
     "difficulty": "Intermediate",
     "badge": "Fast"
@@ -34,7 +34,7 @@
     "name": "Next.js",
     "category": "Frontend",
     "description": "The React framework for full-stack web applications with hybrid static and server rendering.",
-    "icon": "/src/assets/icons/nextjs.png",
+    "icon": "/icons/nextjs.png",
     "rating": 4.9,
     "difficulty": "Intermediate",
     "badge": "Full-Stack"
@@ -44,7 +44,7 @@
     "name": "Node.js",
     "category": "Backend",
     "description": "An asynchronous event-driven JavaScript runtime built for scalable network applications.",
-    "icon": "/src/assets/icons/nodejs.png",
+    "icon": "/icons/nodejs.png",
     "rating": 4.8,
     "difficulty": "Intermediate",
     "badge": "Standard"
@@ -54,7 +54,7 @@
     "name": "PostgreSQL",
     "category": "Database",
     "description": "A powerful, open-source object-relational database system with proven reliability.",
-    "icon": "/src/assets/icons/postgresql.svg",
+    "icon": "/icons/postgresql.svg",
     "rating": 4.9,
     "difficulty": "Intermediate",
     "badge": "Top SQL"
@@ -64,7 +64,7 @@
     "name": "Redis",
     "category": "Database",
     "description": "An in-memory data structure store used as a high-speed database, cache, and message broker.",
-    "icon": "/src/assets/icons/redis.png",
+    "icon": "/icons/redis.png",
     "rating": 4.8,
     "difficulty": "Intermediate",
     "badge": "Cache"
@@ -74,7 +74,7 @@
     "name": "JavaScript",
     "category": "Language",
     "description": "The versatile, ubiquitous scripting language powering dynamic behavior across the web.",
-    "icon": "/src/assets/icons/javascript.jpg",
+    "icon": "/icons/javascript.jpg",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
     "badge": "Ubiquitous"
@@ -84,7 +84,7 @@
     "name": "TypeScript",
     "category": "Language",
     "description": "A strongly typed programming language that builds on JavaScript for robust tooling and applications.",
-    "icon": "/src/assets/icons/typescript.svg",
+    "icon": "/icons/typescript.svg",
     "rating": 4.9,
     "difficulty": "Intermediate",
     "badge": "Essential"
@@ -94,7 +94,7 @@
     "name": "Java",
     "category": "Language",
     "description": "A secure, object-oriented programming language designed for portability and scale.",
-    "icon": "/src/assets/icons/java.png",
+    "icon": "/icons/java.png",
     "rating": 4.6,
     "difficulty": "Intermediate",
     "badge": "Robust"
@@ -104,7 +104,7 @@
     "name": "Tailwind CSS",
     "category": "Styling",
     "description": "A utility-first CSS framework packed with classes that can be composed to build custom UI.",
-    "icon": "/src/assets/icons/tailwind.png",
+    "icon": "/icons/tailwind.png",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
     "badge": "Modern"
@@ -114,7 +114,7 @@
     "name": "Docker",
     "category": "DevOps",
     "description": "A platform designed to build, share, and run containerized applications reliably.",
-    "icon": "/src/assets/icons/docker.jpg",
+    "icon": "/icons/docker.jpg",
     "rating": 4.9,
     "difficulty": "Intermediate",
     "badge": "Containers"
