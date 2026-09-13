@@ -19,8 +19,8 @@ button {
   font-family: inherit;
 }
 
-/* ===== Navbar ===== */
-
+/* 
+navbar */
 .navbar {
   width: 100%;
   height: 70px;
@@ -28,10 +28,8 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   background-color: #ffffff;
   border-bottom: 1px solid #eeeeee;
-
   position: sticky;
   top: 0;
   z-index: 100;
@@ -69,27 +67,21 @@ button {
 .signup-button {
   padding: 10px 20px;
   border-radius: 999px;
-
   color: white !important;
-
-  background: linear-gradient(
-    90deg,
-    #ff6b35,
-    #e91e8c,
-    #8b3dff
-  );
+  background: linear-gradient(90deg, #ff6b35, #e91e8c, #8b3dff);
 }
 
 .menu-button {
   display: none;
 }
 
-/* ===== Mobile ===== */
+/* mobile */
+@media(max-width: 768px) {
 
-@media (max-width: 768px) {
   .navbar {
     height: 64px;
     padding: 0 20px;
+    position: relative;
   }
 
   .navbar-links {
@@ -105,9 +97,9 @@ button {
   }
 
   .navbar-logo {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .navbar-logo img {
@@ -115,6 +107,7 @@ button {
   }
 
   .navbar-actions {
+    margin-left: auto;
     gap: 8px;
   }
 
@@ -125,4 +118,5 @@ button {
   .signup-button {
     padding: 8px 12px;
   }
+
 }

@@ -1,5 +1,4 @@
-import Navbar from "./components/Navbar";
-
+import Navbar from "./components/Navbar"
 function App() {
   return (
     <>
@@ -9,7 +8,8 @@ function App() {
         <h1>Dev Stack</h1>
       </main>
     </>
-  );
+  )
+
 }
 
-export default App;
+export default App
