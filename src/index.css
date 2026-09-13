@@ -415,8 +415,13 @@ technology grid */
   background: #ffffff;
   font-size: 14px;
   font-weight: 600;
-  color: #9ca3af;
-  cursor: not-allowed;
+  color: #dc2626;
+  cursor: pointer;
+}
+
+.remove-all-button:hover{
+  background: #fef2f2;
+  border-color: #fecaca;
 }
 
 

@@ -31,6 +31,10 @@ function Technologies(){
     setSelected(selected.filter((item) => item.id !== id))
   }
 
+  function handleRemoveAll(){
+    setSelected([])
+  }
+
   if(loading){
     return <p>Loading technologies...</p>
   }
@@ -62,6 +66,7 @@ function Technologies(){
           count={selected.length}
           selected={selected}
           onRemove={handleRemoveFromStack}
+          onRemoveAll={handleRemoveAll}
         />
 
       </div>

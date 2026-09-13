@@ -5,9 +5,10 @@ type StackSidebarProps = {
   count: number
   selected: Technology[]
   onRemove: (id: string) => void
+  onRemoveAll: () => void
 }
 
-function StackSidebar({ count, selected, onRemove }: StackSidebarProps){
+function StackSidebar({ count, selected, onRemove, onRemoveAll }: StackSidebarProps){
   return(
     <aside className="stack-sidebar">
 
@@ -33,7 +34,7 @@ function StackSidebar({ count, selected, onRemove }: StackSidebarProps){
       )}
 
       {count > 0 && (
-        <button className="remove-all-button">
+        <button className="remove-all-button" onClick={onRemoveAll}>
           Remove All
         </button>
       )}
