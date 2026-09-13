@@ -1,14 +1,15 @@
 import type { Technology } from "../types/technology"
 import StackItem from "./StackItem"
 
-type StackSidebarProps = {
+type Props = {
   count: number
   selected: Technology[]
   onRemove: (id: string) => void
   onRemoveAll: () => void
 }
 
-function StackSidebar({ count, selected, onRemove, onRemoveAll }: StackSidebarProps){
+function StackSidebar({ count, selected, onRemove, onRemoveAll }: Props){
+
   return(
     <aside className="stack-sidebar">
 

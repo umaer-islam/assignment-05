@@ -1,12 +1,13 @@
 import type { Technology } from "../types/technology"
 
-type TechnologyCardProps = {
+type Props = {
   technology: Technology
   onAdd: (technology: Technology) => void
   isAdded: boolean
 }
 
-function TechnologyCard({ technology, onAdd, isAdded }: TechnologyCardProps){
+function TechnologyCard({ technology, onAdd, isAdded }: Props){
+
   return(
     <div className="technology-card">
 
@@ -16,7 +17,6 @@ function TechnologyCard({ technology, onAdd, isAdded }: TechnologyCardProps){
       </div>
 
       <h3>{technology.name}</h3>
-
       <p className="card-description">{technology.description}</p>
 
       <div className="card-divider"></div>

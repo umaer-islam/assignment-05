@@ -1,11 +1,12 @@
 import type { Technology } from "../types/technology"
 
-type StackItemProps = {
+type Props = {
   technology: Technology
   onRemove: (id: string) => void
 }
 
-function StackItem({ technology, onRemove }: StackItemProps){
+function StackItem({ technology, onRemove }: Props){
+
   return(
     <div className="stack-item">
       <div className="stack-item-info">
