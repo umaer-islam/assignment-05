@@ -1,23 +1,37 @@
+import type { Technology } from "../types/technology"
+import StackItem from "./StackItem"
+
 type StackSidebarProps = {
   count: number
+  selected: Technology[]
+  onRemove: (id: string) => void
 }
 
-function StackSidebar({ count }: StackSidebarProps) {
-  return (
+function StackSidebar({ count, selected, onRemove }: StackSidebarProps){
+  return(
     <aside className="stack-sidebar">
+
       <div className="stack-header">
         <h3>Your Stack</h3>
         <p className="stack-count">{count} Technologies Selected</p>
       </div>
+
       {count === 0 ? (
         <div className="stack-empty">
           <p>Your stack is empty.</p>
         </div>
       ) : (
         <div className="stack-items">
-          <p>Items will go here</p>
+          {selected.map((technology) => (
+            <StackItem
+              key={technology.id}
+              technology={technology}
+              onRemove={onRemove}
+            />
+          ))}
         </div>
       )}
+
       {count > 0 && (
         <button className="remove-all-button">
           Remove All
@@ -27,4 +41,5 @@ function StackSidebar({ count }: StackSidebarProps) {
     </aside>
   )
 }
+
 export default StackSidebar

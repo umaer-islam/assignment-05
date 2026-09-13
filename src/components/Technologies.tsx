@@ -3,7 +3,7 @@ import type { Technology } from "../types/technology"
 import TechnologyCard from "./TechnologyCard"
 import StackSidebar from "./StackSidebar"
 
-function Technologies() {
+function Technologies(){
   const [technologies, setTechnologies] = useState<Technology[]>([])
   const [loading, setLoading] = useState(true)
   const [selected, setSelected] = useState<Technology[]>([])
@@ -17,12 +17,27 @@ function Technologies() {
       })
   }, [])
 
-  if (loading) {
+  function handleAddToStack(technology: Technology){
+    const alreadyAdded = selected.some((item) => item.id === technology.id)
+
+    if(alreadyAdded){
+      return
+    }
+
+    setSelected([...selected, technology])
+  }
+
+  function handleRemoveFromStack(id: string){
+    setSelected(selected.filter((item) => item.id !== id))
+  }
+
+  if(loading){
     return <p>Loading technologies...</p>
   }
 
-  return (
+  return(
     <section className="technologies" id="technologies">
+
       <div className="technologies-heading">
         <h2>
           Explore the <span>Technologies</span>
@@ -31,16 +46,23 @@ function Technologies() {
       </div>
 
       <div className="technologies-layout">
+
         <div className="technology-grid">
           {technologies.map((technology) => (
             <TechnologyCard
               key={technology.id}
               technology={technology}
+              onAdd={handleAddToStack}
+              isAdded={selected.some((item) => item.id === technology.id)}
             />
           ))}
         </div>
 
-        <StackSidebar count={selected.length} />
+        <StackSidebar
+          count={selected.length}
+          selected={selected}
+          onRemove={handleRemoveFromStack}
+        />
 
       </div>
 

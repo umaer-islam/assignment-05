@@ -308,6 +308,11 @@ technology grid */
   background: #1a1a1a;
 }
 
+.card-button:disabled{
+  background: #10b981;
+  cursor: not-allowed;
+}
+
 
 /* stack sidebar */
 .stack-sidebar {
@@ -345,6 +350,61 @@ technology grid */
 .stack-empty p {
   font-size: 14px;
   color: #9ca3af;
+}
+
+
+/* stack items */
+.stack-items{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.stack-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+}
+
+.stack-item-info{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.stack-item-info img{
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.stack-item-name{
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.stack-item-category{
+  font-size: 11px;
+  color: #64748b;
+}
+
+.stack-item-remove{
+  border: none;
+  background: none;
+  color: #9ca3af;
+  font-size: 22px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+.stack-item-remove:hover{
+  color: #dc2626;
 }
 
 .remove-all-button {
